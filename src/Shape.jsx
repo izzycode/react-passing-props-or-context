@@ -1,4 +1,5 @@
 import React from 'react'
+import './Shapes.css'
 
 const setStyle = elem => {
   let style = {}

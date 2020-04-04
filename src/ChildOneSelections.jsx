@@ -1,27 +1,28 @@
-import React, { Component } from 'react'
-import './Shapes.css'
+import React, { useContext } from 'react'
 import Shape from './Shape'
+import { SelectionsContext } from './ParentContainer'
 
-export default class ChildOneSelections extends Component {
+const ChildOneSelections = () => {
+  const context = useContext(SelectionsContext)
 
-  render() {
-    return (
-      <div>
+  return (
+    <div>
         {
-          this.props.selections.map( (elem, index) => {
-            return(
+          context.selections.map((elem, index) => {
+            return (
               <div key={index}>
                 <button
-                  onClick={ () => this.props.changeSelections('remove', index) }
+                  onClick={() => context.changeSelections('remove', index)}
                 >
                   X
-                </button>
+            </button>
                 <Shape data={elem} />
               </div>
             )
           })
         }
-      </div>
-    )
-  }
+    </div>
+  )
 }
+
+export default ChildOneSelections
