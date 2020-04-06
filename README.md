@@ -13,5 +13,5 @@ To see different examples checkout the corresponding branch.
 ### Instructions
 1. Clone this repository: https://github.com/izzycode/react-passing-props-or-context
 2. Run `git fetch --all` This will download all the branches that are in Github  
-  You won't see teh branches if you do `git branch`  
+  You won't see the branches locally if you do `git branch`  
 3. Checkout the desired branch (e.g.: `git checkout classes-state`) and you should get a message that you are now in `classes-state` branch tracking the remote branch of the same name.
